@@ -19,6 +19,16 @@ function currentAlphabetElement(element){
 
     if(playerPressed === alphabetLowerCase){
         console.log('you get a point')
+        const currentScoreElement = document.getElementById('current-score');
+        const currectScore = currentScoreElement.innerText;
+        const currectElementScore = parseInt(currectScore);
+
+        // new score crerate
+        const newScore = currectElementScore + 1
+        // new score add
+        currentScoreElement.innerText = newScore
+
+
         console.log('you have pressed currect', alphabetLowerCase )
         removeBackgroundColorById(alphabetLowerCase)
         continuePlay()
