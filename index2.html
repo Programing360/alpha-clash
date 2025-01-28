@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alphabeat Clash pro </title>
+    <title>Alpha Clash Project</title>
     <!-- Daisy ul -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -11,36 +11,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style2.css">
 </head>
-<body class= "poppins-font ">
-    <main class="bg-[#010313] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center">
-        <section id="home-screen" class=" min-h-screen flex justify-center  items-center text-center">
-            <div class="bg-url">
-                <!-- <img src="images/background.png" alt=""> -->
-                <h1 class="text-9xl text-[#FFFFFF] anton-font">ALPHABET CLASH</h1>
-                <p class="text-[#FFFFFF] text-2xl mt-4">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                <button onclick="play()" class="btn bg-[#FFFFFF] mt-10 px-6">Play Now</button>
+<body class="bg-[#1E1E1E] min-h-screen text-white">
+    <main class="poppins-font bg-[url(images/background.png)] min-h-screen bg-no-repeat text-center bg-center ">
+        <section id="home-screen1" class="">
+            <div class="flex flex-col justify-center items-center min-h-screen gap-9">
+                <h1 class=".anton-font text-8xl font-bold">ALPHABET CLASH</h1>
+               <p class="text-xl">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+               <button onclick="play()" class="btn font-semibold text-xl">Play Now</button>
             </div>
+            
         </section>
-        <section id="play-ground" class=" flex flex-col justify-center items-center min-h-screen pb-96 hidden">
-
-            <div class="artboard artboard-horizontal phone-6 border-[20px] bg-[#FFFFFFB3] border-[#010313CC] rounded-2xl mb-24">
-                <div class="flex justify-center ">
-                    <p class=" items-center text-[#FFFFFF] bg-[#010313CC] px-4 pb-4 rounded-b-xl mb-20">Don't watch keyboard  while playing...</p>
-                    
-                </div>
-                <div class="pl-14">
-                    <span id="current-alphabet" class="text-8xl font-bold text-center pl-96 mt-96 uppercase">Y</span>
-                    <!-- <h1 id="current-alphabet" class="text-8xl font-bold"></h1> -->
-                    </div>
+        <section id="play-ground2" class="play-ground flex flex-col justify-center items-center gap-9 hidden">
+            <div class="artboard artboard-horizontal phone-6  border-[20px] bg-[#FFFFFFB3] border-[#010313] mt-72 text-center">
+                <p class="bg-black   text-center w-[400px] rounded-b-xl pb-3 mb-20 m-auto font-medium text-[18px]">Don't watch keyboard  while playing...</p>
+                <span id="current-alphabet" class="text-9xl font-bold text-black uppercase">Y</span>
             </div>
-            <!-- keybord genarate -->
-            <div>
+            <div class="">
                 <div class="my-1 flex w-full justify-center gap-1">
-                    <kbd id="q" class="kbd">q</kbd>
                     <kbd id="w" class="kbd">w</kbd>
                     <kbd id="e" class="kbd">e</kbd>
+                    <kbd id="q" class="kbd">q</kbd>
                     <kbd id="r" class="kbd">r</kbd>
                     <kbd id="t" class="kbd">t</kbd>
                     <kbd id="y" class="kbd">y</kbd>
@@ -71,9 +63,8 @@
                     <kbd id="/" class="kbd">/</kbd>
                 </div>
             </div>
-                
             <div class="mt-28 flex justify-between min-w-[1000px]">
-                <button class="btn bg-[#894189] text-[#FFFFFF]">
+                <button class="btn  bg-[#894189] text-[#FFFFFF]">
                     Life
                     <img src="images/Group 23.svg" alt="">
                     <span id="current-life">5</span>
@@ -83,22 +74,20 @@
                     <img src="images/monetization_on.svg" alt="">
                     <span id="current-score">0</span>
                 </button>
-            </div>
+            
         </section>
-        <section class="score flex justify-center items-center min-h-screen hidden">
-            <div class="text-[#FFFFFF] bg-[#FFFFFF33] rounded-2xl w-[420px] p-16">
-                <h1 class="text-6xl pb-7 font-bold">
-                    <span>Score :</span>
-                    <span>14</span>   
-                </h1>
-                <button class="btn px-5 ml-24 bg-[#FFFFFF] text-[##010313] mb-5">
-                    Play again
-                </button>
-                <p class="text-center">Practice will make you Pro</p>
+        <section id="Game-over" class=" flex flex-col justify-center items-center min-h-screen hidden">
+            <div class="bg-[#ffffff33] p-20 space-y-5 rounded-xl">
+                <h2>Game Over!</h2>
+                <!-- <span id="game-score" class="text-5xl font-bold">Score : 14</span> -->
+                <h1 class="text-5xl font-bold">Score :<span id="game-score">14</span></h1>
+                <button onclick="playAgain()" class="btn">Play Again</button>
+                <p>Practice will make you Pro</p>
+
             </div>
         </section>
     </main>
-    <script src="script/utility.js"></script>
-    <script src="script/alpha.js"></script>
+    <script src="script/utility2.js"></script>
+    <script src="script/alpha2.js"></script>
 </body>
 </html>

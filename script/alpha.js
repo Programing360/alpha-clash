@@ -13,9 +13,9 @@ function currentAlphabetElement(element){
 
     const currentAlphabet = document.getElementById('current-alphabet')
     const alphabetElement = currentAlphabet.innerText;
-    const alphabetLowerCase = alphabetElement.toLocaleLowerCase()
+    const alphabetLowerCase = alphabetElement.toLocaleLowerCase
 
-    console.log(alphabetElement)
+    console.log(alphabetLowerCase)
 
     if(playerPressed === alphabetLowerCase){
         console.log('you get a point')
@@ -35,6 +35,14 @@ function currentAlphabetElement(element){
     }
     else{
         console.log('you lost a life')
+        // get current life point
+        const currentLifeElement = document.getElementById('current-life')
+        const currentLife = currentLifeElement.innerText;
+        const currentLifeScore = parseInt(currentLife)
+
+        // set Current Life Score
+        const newScore = currentLifeScore - 1
+        currentLifeElement.innerText = newScore;
     }
 }
 document.addEventListener('keyup', currentAlphabetElement);
